@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+ 	<head>
+ 		<meta charset="UTF-8"/>
+
+ 		<title>Сервіс обліку студентів</title>
+
+ 		<meta name="description"
+ 		 	  value="Система Обліку Студентів Навчального Закладу"/>
+ 		 	  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ 		 	  <!--Include Styles -->
+ 		 	  <link rel="stylesheet" 
+ 		 	  href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+ 		 	  <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+	</head>
+	<body>
+
+		<div class="container">
+
+			<div class="row" id="header">
+				<div class="col-xs-8">
+					<h1>Сервіс обліку студентів</h1>
+				</div>
+				<div class="col-xs-4" id="group-selector">
+					<strong>Група:</strong>
+					<select>
+						<option value="">Усі студенти</option>
+						<option value="">АВ-11, Ковалишин Павло</option>
+						<option value="">АВ-12, Сухий Володимир</option>
+					</select>
+				</div>	
+			</div>	
+		  <!--End header -->
+		  <!-- Start subheader-->
+		  <div class="row" id="sub-header">
+		  	<div class="col-xs-12">
+		  		<ul class="nav nav-tabs">
+				  <li role="presentation" class="active"><a href="#">Студенти</a></li>
+				  <li role="presentation"><a href="#">Відвідування</a></li>
+				  <li role="presentation"><a href="#">Групи</a></li>
+				</ul>
+		  	</div>
+		  </div>			
+			<!-- End subheader-->
+
+			<!-- Start Content Columns -->
+			<div class="row" id="content-columns">
+					<div class="col-xs-12" id="content-column">
+						<div class="alert alert-warning" role="alert">Студент успішно доданий</div>
+						<h2>База Студентів</h2>	
+					<a href="#" class="btn btn-primary">Додати Студента</a>
+
+					<!--Start Students Listing -->
+					<table class="table">
+						<thead>
+							<tr>
+								<th><a href="#">#</a></th>
+								<th>Фото</th>
+								<th><a href="#">Прізвище &uarr;</a></th>
+								<th><a href="#">Ім'я</a></th>
+								<th><a href="#">№ Білету</a></th>
+								<th>Дії</th>
+							</tr>
+
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td><img class="img-circle" src="../image/vano_1.jpg" width="30" height="30" /></td>
+								<td>Ковалишин</td>
+								<td>Павло</td>
+								<td>2123</td>
+								<td>
+									<div class="btn-group">
+  										<button type="button" class="btn btn-default dropdown-toggle" 
+  												data-toggle="dropdown" >Дія
+  									 		<span class="caret"></span>
+ 										</button>
+					  					<ul class="dropdown-menu">
+					  				    	<li><a href="#">Редагувати</a></li>
+					    					<li><a href="#">Відвідування</a></li>
+					  				    	<li><a href="#">Видалити</a></li>
+					    				</ul>
+									</div>
+								</td>
+							</tr>
+							 	<tr>
+								  <td>2</td>
+								  <td><img class="img-circle" src="../image/vano_2.jpg" width="30" height="30" /></td>
+								  <td>Сухий</td>
+								  <td>Володимир</td>
+								  <td>1232</td>
+								  <td>
+								  		<div class="btn-group">
+  											<button type="button" class="btn btn-default dropdown-toggle" 
+  												data-toggle="dropdown">Дія 
+  												<span class="caret"></span>
+ 									 		</button>
+ 									    	<ul class="dropdown-menu">
+										   		 <li><a href="#">Редагувати</a></li>
+										    	<li><a href="#">Відвідування</a></li>
+										    	<li><a href="#">Видалити</a></li>
+										    </ul>
+										</div>
+									</td>
+							  	</tr>
+							  		<tr>
+							  			<td>3</td>
+							  			<td><img class="img-circle" src="../image/lion.jpg" height="30" width="30" /></td>
+							  			<td>Клим</td>
+							  			<td>Володимир</td>
+							  			<td>1124</td>
+							  			<td>
+							  				<div class="btn-group">
+ 												<button type="button" class="btn btn-default dropdown-toggle"  
+ 													data-toggle="dropdown">Дія
+ 											  		<span class="caret"></span>
+  												</button>
+  												<ul class="dropdown-menu">
+												    <li><a href="#">Редагувати</a></li>
+												    <li><a href="#">Відвідування</a></li>
+												    <li><a href="#">Видалити</a></li>
+												</ul>
+											</div>
+										</td>
+							  		</tr>
+						</tbody>
+
+					</table>
+					<!--End Students Listing -->
+					<nav>
+ 				    	<ul class="pagination">
+                   		 <li><a href="#">&laquo;</a></li> 
+				    	 <li><a href="#">1</a></li>
+				    	 <li class=" active"><a href="#">2</a></li>
+				   		 <li><a href="#">3</a></li>
+				   		 <li><a href="#">4</a></li>
+				   		 <li><a href="#">5</a></li>
+				   		  <li><a href="#">&raquo;</a></li> 
+				   		</ul>
+					</nav>
+				</div>
+			</div>	
+			<!--Start Content Columns -->	 
+		</div>	
+		<!--End Container-->
+
+		<!--Start Footer -->
+		<div class="row" id="footer">
+			<div class="col-xs-12">	
+					
+				&copy; 2014 Cервіс Обліку Студентів	
+			</div>	
+		</div>	
+		<!-- End Footer -->
+		<!-- Javascript Section -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		
+
+	</body>
+</html>
